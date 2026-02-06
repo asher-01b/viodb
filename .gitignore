@@ -1,29 +1,15 @@
-# ===========================
-# JetBrains IDE (IntelliJ)
-# ===========================
 # Project settings and workspace
-.idea/
 *.iws
 *.ipr
+.npmrc
 
 # Module configuration files
 *.iml
-
-# ===========================
-# Backend (Java / Maven)
-# ===========================
-# Maven build output directory (Important)
-target/
-backend/target/
-
-# Compiled class files
-*.class
 
 # Log files
 *.log
 
 # Package files (if any generated in root)
-*.jar
 *.war
 *.nar
 *.ear
@@ -31,18 +17,15 @@ backend/target/
 *.tar.gz
 *.rar
 
-# ===========================
-# Frontend (Node.js / Electron)
-# ===========================
+#  (Node.js / Electron)
 # Dependencies (NEVER commit this)
-frontend/node_modules/
 node_modules/
 
 # Build outputs (Electron/Vite build artifacts)
-frontend/dist/
-frontend/build/
-frontend/out/
-frontend/release/
+dist/
+build/
+out/
+release/
 
 # Local Environment Variables (Security risk if committed)
 .env
@@ -57,9 +40,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# ===========================
 # Operating System Files
-# ===========================
 # macOS
 .DS_Store
 

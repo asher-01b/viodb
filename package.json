@@ -1,0 +1,28 @@
+{
+  "name": "viodb-app-electron",
+  "version": "0.0.1",
+  "description": "hello world",
+  "license": "ISC",
+  "author": "asher-01b",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "vite": "vite",
+    "electron": "electron .",
+    "dev": "concurrently -k \"npm run vite\" \"npx wait-on tcp:5173 && npm run electron\"",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.1",
+    "@vitejs/plugin-vue": "^6.0.3",
+    "concurrently": "^9.2.1",
+    "electron": "^40.1.0",
+    "vite": "^7.3.1",
+    "wait-on": "^9.0.3"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "element-plus": "^2.13.2",
+    "vue": "^3.5.27"
+  }
+}
